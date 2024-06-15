@@ -12,7 +12,7 @@ export default async function Page() {
 
   const session = await getServerSession(authOptions);
   if (session?.user) {
-    //testing CICD
+    //CICD test check - 10 
     redirect('/dashboard')
   } else {
     redirect('/api/auth/signin')
